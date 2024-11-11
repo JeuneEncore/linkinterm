@@ -6,7 +6,18 @@ const internshipsData = [
     { id: 2, title: "Data Science Internship", company: "DataArt", location: "Astana, KZ", type: "Part-Time" },
     { id: 3, title: "Marketing Internship", company: "OLX", location: "Astana, KZ", type: "Full-Time" },
     { id: 4, title: "Product Management Internship", company: "Ozon", location: "Astana, KZ", type: "Remote" },
-  ];
+    { id: 5, title: "Backend Developer Internship", company: "Halyk Bank", location: "Almaty, KZ", type: "Full-Time" },
+    { id: 6, title: "Graphic Design Internship", company: "Air Astana", location: "Almaty, KZ", type: "Part-Time" },
+    { id: 7, title: "Software Engineering Internship", company: "KCell", location: "Shymkent, KZ", type: "Full-Time" },
+    { id: 9, title: "Sales Internship", company: "Beeline KZ", location: "Astana, KZ", type: "Full-Time" },
+    { id: 10, title: "Human Resources Internship", company: "Samruk-Kazyna", location: "Almaty, KZ", type: "Part-Time" },
+    { id: 11, title: "Data Engineering Internship", company: "Kaspi Bank", location: "Astana, KZ", type: "Full-Time" },
+    { id: 12, title: "Digital Marketing Internship", company: "BI Group", location: "Astana, KZ", type: "Remote" },
+    { id: 13, title: "Finance Internship", company: "ForteBank", location: "Almaty, KZ", type: "Full-Time" },
+    { id: 14, title: "UI/UX Design Internship", company: "ABC Design", location: "Astana, KZ", type: "Part-Time" },
+    { id: 15, title: "Cybersecurity Internship", company: "National Bank of Kazakhstan", location: "Almaty, KZ", type: "Full-Time" }
+];
+
   const Internships = () => {
     const [search, setSearch] = useState("");
     const [filter, setFilter] = useState("");

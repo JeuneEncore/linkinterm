@@ -1,0 +1,7 @@
+.App {
+  height: 120vh;
+  background-image: url('/public/background1.png'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: repeat-y; /* Prevent repetition */
+}

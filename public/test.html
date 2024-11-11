@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random PNG Placement</title>
+  <style>
+    /* Container for the background */
+    .background {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    /* Styling for PNG images */
+    .random-image {
+      position: absolute;
+      width: 100px; /* Adjust as needed */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="background" id="background">
+  <!-- Images will be added here by JavaScript -->
+</div>
+
+<script>
+  // Array of PNG images
+  const images = [
+    'C:\Users\User\Desktop\TE\test\public\logo.png'
+    // Add more paths if needed
+  ];
+
+  // Function to generate a random number within a range
+  function getRandomPosition(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  // Function to place images randomly
+  function placeImages() {
+    const container = document.getElementById('background');
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+
+    images.forEach((src) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.classList.add('random-image');
+
+      // Set random positions for each image
+      img.style.left = `${getRandomPosition(containerWidth - 100)}px`; // 100 is image width
+      img.style.top = `${getRandomPosition(containerHeight - 100)}px`;
+
+      // Append image to the container
+      container.appendChild(img);
+    });
+  }
+
+  // Call function on page load
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+  window.onload = placeImages;
+</script>
+
+</body>
+</html>
